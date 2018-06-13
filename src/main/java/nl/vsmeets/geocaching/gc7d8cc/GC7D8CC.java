@@ -17,6 +17,14 @@ public class GC7D8CC {
 	 *            The command line arguments.
 	 */
 	public static void main(final String[] args) {
+		final GC7D8CC main = new GC7D8CC();
+		main.start();
+	}
+
+	/**
+	 * Start solving the mystery.
+	 */
+	private void start() {
 	}
 
 }
