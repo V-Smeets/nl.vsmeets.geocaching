@@ -3,6 +3,9 @@
  */
 package nl.vsmeets.geocaching.gc7d8cc;
 
+import com.google.common.collect.ArrayTable;
+import com.google.common.collect.Table;
+
 /**
  * Solve the mystery GC7D8CC.
  *
@@ -25,6 +28,10 @@ public class GC7D8CC {
 	 * Start solving the mystery.
 	 */
 	private void start() {
+		// Row 0 contains the sum values!
+		// Row 1-6 shall contain the unique values 0-9.
+		// For every column, the sum of the rows 1-6 shall be equal to row 0.
+		final Table<Integer, Integer, Integer> board = ArrayTable.create(new Range(0, 6), new Range(1, 10));
 	}
 
 }
